@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/lightViolet"
+    android:layout_gravity="center_horizontal"
+    android:padding="2dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/gradient"
+        android:layout_marginTop="10dp">
+
+    <RelativeLayout
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:paddingStart="20dp">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="14dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/smile" />
+
+    <TextView
+        android:id="@+id/txtUsernameComment"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/gabarito"
+
+        android:gravity="center"
+        android:text="Anonymous 11629"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/commandAt"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+
+        android:text="5 ម៉ោងមុន"
+        android:textColor="@color/lightGray"
+        android:gravity="center|end"
+        android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/txtComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="មែនតើ!!! ខុសទំនង។"
+        android:fontFamily="@font/khmerosdangrek"
+        android:textColor="@color/white"
+        android:textSize="11sp"/>
+    </RelativeLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:id="@+id/cardViewId"
+    app:cardBackgroundColor="@color/lightViolet"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp"
+    app:cardMaxElevation="0dp">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="20dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/smile" />
+
+            <TextView
+                android:id="@+id/UserName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/gabarito"
+                android:text="Anonymous 01629"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="5 ម៉ោងមុន"
+                android:textColor="@color/lightGray" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/contentTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/white" />
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageView5"-->
+<!--                    android:layout_width="13dp"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    app:srcCompat="@drawable/heart_off"-->
+<!--                    android:layout_gravity="center"-->
+
+<!--                    android:clickable="true"-->
+<!--                    android:focusable="true" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/comment"-->
+<!--                    android:layout_width="15dp"-->
+<!--                    android:layout_height="12dp"-->
+<!--                    app:srcCompat="@drawable/comment"-->
+<!--                    android:layout_marginStart="8dp"-->
+<!--                    android:layout_gravity="center"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <!-- Like Button -->
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="13dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/heart_off"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <!-- Likes TextView -->
+            <TextView
+                android:id="@+id/likesTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 Likes"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_marginStart="8dp" />
+
+            <!-- Comment Button -->
+            <ImageView
+                android:id="@+id/comment"
+                android:layout_width="15dp"
+                android:layout_height="12dp"
+                app:srcCompat="@drawable/comment"
+                android:layout_marginStart="8dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/CommentTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 Comments"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_marginStart="8dp" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="16dp"
+                android:layout_height="24dp"
+                app:srcCompat="@drawable/trash_bin"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+

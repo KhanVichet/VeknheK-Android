@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.LoginActivity"
+    android:gravity="center"
+    android:background="@drawable/gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:layout_margin="50dp"
+
+            app:cardBackgroundColor="@color/darkViolet"
+            app:cardCornerRadius="50dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="235dp"
+                android:layout_height="209dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="15dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/veknhek" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/loginText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/txtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="210dp"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/login"
+                    android:paddingStart="14dp"
+                    android:fontFamily="@font/khmerosdangrek"
+                    android:textColorHint="@color/lightGray"
+                    android:hint="សូមបញ្ចូលអ៊ីមែលរបស់អ្នក"
+                    android:textAlignment="center"
+                    android:textColor="@color/lightGray"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/txtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/login"
+                    android:inputType="textPassword"
+                    android:paddingStart="14dp"
+                    android:textColorHint="@color/lightGray"
+                    android:hint="សូមបញ្ចូលកូដសម្ងាត់របស់អ្នក"
+                    android:fontFamily="@font/khmerosdangrek"
+                    android:textSize="12sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/lightGray"
+
+                    android:layout_marginTop="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/togglePasswordVisibility"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:srcCompat="@drawable/ic_eye_closed"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:padding="8dp"
+                        android:contentDescription="@string/toggle_password" />
+
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:padding="0dp"
+
+                    android:background="@drawable/button"
+
+                    android:fontFamily="@font/khmerosdangrek"
+                    android:text="ចូល"
+                    android:textColor="@color/white"
+                    android:textColorLink="@color/white"
+                    android:textSize="11sp" />
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:weightSum="100"
+                        android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="82dp"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="@font/khmerosdangrek"
+                        android:text="មិនទាន់មានគណនី?"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/CreateNewAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+
+                        android:fontFamily="@font/khmerosdangrek"
+                        android:text="បង្កើតគណនីថ្មី"
+                        android:textAlignment="center"
+                        android:textColor="@color/font"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>
